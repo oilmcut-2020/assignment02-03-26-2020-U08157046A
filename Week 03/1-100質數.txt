@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args)
+    {
+        System.out.printf("Prime numbers from 1 to 100 :\n");
+        int i, j;
+        for (i = 2; i <= 100; i++) 
+        {
+             for (j = 2; j < i; j++)
+             {
+                if (i % j == 0)     //只要有被整除，都直接跳開
+                    break;
+             }
+            if (j >= i)             //篩選出質數，("j"最後出來數會與"i"相同)
+                System.out.println(i);
+         }
+            
+	}
+}
